@@ -1,0 +1,115 @@
+<!--https://wp-p.info/tpl_rep.php?cat=html-beginner&fl=r9-->
+
+<!--ドックタイプ宣言、HTMLで書いてあるよ。必ず記述
+ ドキュメントの言語が日本語だよ-->
+<!DOCTYPE html>
+<html lang="ja">
+ <!--このHTMLはこういう文法で書いてあるからこう表示してね-->
+
+<head>
+        <!--metaタグ文字データをutf-8で読み込んでね-->
+    <meta charset="utf-8">
+        <!--ブラウザのタブに出てくる文字-->
+    <title>Hello world</title>
+</head>
+
+
+<!--bodyタグの中身はブラウザで表示されるもの。-->
+<body>
+<!--
+<table class="greeting_table">
+    <!-なくてもいいがクラスの要素はフッター部分を明示的に分けることができる
+        thead,tfoot,tbody.少し違うがif,elif,elseみたいな感じ->
+    <thead>
+        <th>表を作成する</th>
+    </thead>
+    <!-行を定義するtr。セルを定義するtd->
+    <tbody>
+        <tr>
+        <td>おはよう</td>
+        <td>こんにちは </td>
+        <td>こんばんわ</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <td>morning</td>
+        <td>noon</td>
+        <td>evening</td>
+        </tr>
+    </tfoot>
+</table>
+-->
+
+ <!--見出しはh1-6で表示する。htmlにおいてこれが見出し、本文というものはない-->
+<h1>HTMLだけのページ作成</h1>
+<dt>🔹最初に</dt>
+<dd>Ralisでサイトを作成する前に、レンタルサーバーを調べていました。
+<br>HTMLファイルを載せてる人が多かったので、自分でも書いてみようかな。
+<br>ちょっと寄り道でHTMLのページを作成してみました。
+</dd>
+
+<h2>文字の表示</h2>
+<p>一行文字を書いてみる</p>
+pタグ使わなくても文字は表示できる
+<p>行を変えて<br>二行にもできるよ</p>
+
+<!--リストとは別に定義リストがある-->
+<dl>
+    <dt>ここに定義を書いて</dt>
+    <dd>少しずらして</dd>
+    <dd>表示もできる</dd>
+</dl>
+
+<!--リストはulとolがある。違いは頭文字がulはドット、olは数字。
+    ul,ol要素の中にli要素以外を入れることは非推奨-->
+<h2>買い物リスト</h2>
+<ul>
+    <li>ネイル</li>
+    <li>コーヒー</li>
+</ul>
+<ol>
+    <li>マンガ</li>
+    <li>ヘアゴム</li>
+</ol>
+
+
+
+<h2>画像の表示</h2>
+<ul>
+    <li>画像を表示してみたもの</li>
+        <img src="img/sampleneko1.jpeg" >
+    <!--brで改行br,br一行余白ができる-->
+    <br><br>
+    <li>ハイパーリンクとよばれるもの</li>
+        <!--ハイパーリンク画像を触るとgoogleに飛ぶ.別タグで開くようにもできる-->
+        <a href="http://www.google.co.jp/">googleに飛ぶよ</a>
+    <br><br>
+    <li>画像にリンクがついているもの</li>
+        <a href="http://www.google.co.jp/"><img src="img/sampleneko2.jpg"alt="表示されないけど何かかける"></a>
+    <br><br>
+    <li>別タグでリンクが開くもの</li>
+    <a href="http://www.google.co.jp/"target="_bank"><img src="img/sampleneko3.jpg"alt="ねこかわいいよね"></a>
+    
+
+</ul>
+<!--意味のなさないタグにdivタグとspanタグがある-->
+
+<!--https://yume.hacca.jp/koiki/form/button-link.htm-->
+<!--
+<h4>ボタンの種類</h4>
+<p>buttonタイプのほうがいろいろできるみたい</p>
+<!-location.href=''はそのページで開く、window.open('')にすると新しい窓で開く->
+<input type="button" onclick="location.href='url'"value="Input type">
+<button type="button" onclick="location.href='url'">button type</button>
+-->
+<h2>HTMLで使えるボタン種類</h2>
+
+<input type="button" onclick="location.href='https://github.com/7aso/first-website'" value="ソースコード(input)">
+<!--<input type="button" onclick="history.back()" value="戻る">-->
+
+<button onclick="location.href='newindex.html'">CSSも使ってみた(btn)</button>
+<!--<button onclick="history.back()">戻る</button>-->
+
+</body>
+</html>
