@@ -1,0 +1,30 @@
+h1 {
+    color: #204b7a;
+    font-size: 40px;
+    line-height: 2;/*上下の余白*/
+    text-align: center;/*中央揃え*/
+}
+
+p{
+    font-size: 16px;
+    /*fontを変更してみた*/
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;/*全体的な間隔*/
+    letter-spacing: 1px;/*文字の間隔*/
+}
+
+html{
+    background-color: rgb(246, 236, 242);
+}
+body{
+    width: 800px;
+    margin:  auto;/*上下左右の余白*/
+    background-color: rgb(254, 255, 254);
+    padding: 0 20px 20px 20px;/*内側の上下左右の間隔*/
+    border: 0px solid brown;
+}
+img{
+    
+    display: block;
+    margin:0 auto;
+}
