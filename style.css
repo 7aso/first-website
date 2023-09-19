@@ -17,7 +17,7 @@ html{
     background-color: rgb(246, 236, 242);
 }
 body{
-    width: 800px;
+    width: 700px;
     margin:  auto;/*上下左右の余白*/
     background-color: rgb(254, 255, 254);
     padding: 0 20px 20px 20px;/*内側の上下左右の間隔*/
